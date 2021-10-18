@@ -22,11 +22,11 @@ public class TestExercise1 {
         String engine = "chrome"; /* second option: "gecko"; */
         switch(engine){
             case "chrome":
-                System.setProperty("webdriver.chrome.driver","/home/robert/.config/google-chrome/Drivers/chromedriver");
+                System.setProperty("webdriver.chrome.driver","./drivers/chromedriver");
                 driver = new ChromeDriver();
                 break;
             case "gecko":
-                System.setProperty("webdriver.gecko.driver","/home/robert/.config/mozilla/Drivers/geckodriver");
+                System.setProperty("webdriver.gecko.driver","./drivers/geckodriver");
                 driver = new FirefoxDriver();
                 break;
             default:
